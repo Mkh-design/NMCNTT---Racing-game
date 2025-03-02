@@ -1,0 +1,12 @@
+ for (iv=0; iv<room_h; iv+=1)
+  {for (ih=0; ih<room_w; ih+=1)
+     {if (Tabel[ih,iv] == 1)
+         draw_set_color(c_dkgray)
+      if (Tabel[ih,iv] == 2)
+         draw_set_color(c_red)
+      if (Tabel[ih,iv] == 3)
+         draw_set_color(c_yellow)
+      if (Tabel[ih,iv] < 0)
+         draw_set_color(c_maroon)
+      if (Tabel[ih,iv] != 0)
+         draw_rectangle(ih*scale,iv*scale,ih*scale+scale-1,iv*scale+scale-1,false)}}
